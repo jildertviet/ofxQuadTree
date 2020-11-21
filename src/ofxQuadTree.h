@@ -71,7 +71,7 @@ public:
             }
         } else {
             ofSetColor(c, alpha);
-            ofRect(x + scaleX * this->x, y + scaleY * this->y, scaleX * size, scaleY * size);
+            ofDrawRectangle(x + scaleX * this->x, y + scaleY * this->y, scaleX * size, scaleY * size);
         }
     }
 
@@ -93,10 +93,10 @@ public:
             }
         } else {
             ofSetColor(color);
-            ofLine(x + scaleX * this->x, y + scaleY * this->y, x + scaleX * (this->x + size), y + scaleY * this->y);
-            ofLine(x + scaleX * (this->x + size), y + scaleY * this->y, x + scaleX * (this->x + size), y + scaleY * (this->y + size));
-            ofLine(x + scaleX * (this->x + size), y + scaleY * (this->y + size), x + scaleX * this->x, y + scaleY * (this->y + size));
-            ofLine(x + scaleX * this->x, y + scaleY * (this->y + size), x + scaleX * this->x, y + scaleY * this->y);
+            ofDrawLine(x + scaleX * this->x, y + scaleY * this->y, x + scaleX * (this->x + size), y + scaleY * this->y);
+            ofDrawLine(x + scaleX * (this->x + size), y + scaleY * this->y, x + scaleX * (this->x + size), y + scaleY * (this->y + size));
+            ofDrawLine(x + scaleX * (this->x + size), y + scaleY * (this->y + size), x + scaleX * this->x, y + scaleY * (this->y + size));
+            ofDrawLine(x + scaleX * this->x, y + scaleY * (this->y + size), x + scaleX * this->x, y + scaleY * this->y);
         }
     }
     
